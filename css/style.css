@@ -1,0 +1,598 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --title-color: rgb(53, 84, 148);
+    --button-color: rgb(251, 153, 18);
+    --background-color: rgb(241, 248, 255);
+}
+
+h2 {
+    color: var(--title-color);
+}
+
+.orange-block {
+    height: 5px;
+    width: 75px;
+    background-color: var(--button-color);
+}
+
+/* navbar start */
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.fixed-header.scrolled {
+    background-color: #355592;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-button {
+    display: none;
+}
+
+.navbar-right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.navbar-right button {
+    background-color: var(--button-color);
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+}
+
+/* navbar end */
+
+/* hero start */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    background-image: url(/assets/hero-man.jpg);
+    background-position: center;
+    width: 100%;
+    height: 1000px;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.hero-text span {
+    font-size: 80px;
+}
+
+.hero-text p {
+    font-size: 30px;
+}
+
+.hero p {
+    max-width: 1000px;
+}
+
+.hero-blue-box {
+    background-color: var(--title-color);
+    max-width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hero-buttons {
+    display: flex;
+    margin-left: 1%;
+    gap: 40px;
+}
+
+.hero-buttons button {
+    width: 80px;
+}
+
+.sign-up-button {
+    font-size: 15px;
+    background-color: var(--title-color);
+    color: white;
+    padding: 10px;
+    font: bold;
+    border-radius: 5px;
+}
+
+.details-button {
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+/* hero end */
+
+/* stat boxes start */
+
+.stat-boxes {
+    display: flex;
+    font: 1em sans-serif;
+    justify-content: center;
+    gap: 10px;
+
+    font-size: 25px;
+    background-color: var(--background-color);
+
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: white;
+    margin: 20px;
+    width: 275px;
+    height: 150px;
+    font-weight: bold;
+}
+
+.stat-box-number {
+    color: var(--title-color);
+}
+
+/* stat boxes end */
+
+/* classes start */
+
+.classes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    padding-top: 40px;
+    padding-bottom: 60px;
+    color: black;
+    background-color: white;
+}
+
+.class-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 35px;
+}
+
+.class-buttons button {
+    background-color: var(--title-color);
+    color: white;
+    border-radius: 5px;
+    height: 35px;
+    width: 85px;
+}
+
+.changing-class {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.changing-class img {
+    max-width: 500px;
+    max-height: 300px;
+}
+
+.class-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 15%;
+}
+
+.image-div {
+    display: flex;
+    justify-content: right;
+    padding-top: 40px;
+
+}
+
+/* classes end */
+
+/* bmi calculator start */
+
+.bmi-calculator {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.bmi-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 350px;
+}
+
+.bmi-form {
+    display: flex;
+    gap: 5px;
+}
+
+.bmi-form input {
+    width: 130px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.bmi-images {
+    display: flex;
+    flex-direction: column;
+}
+
+.orange-arrow {
+    height: 30px;
+    margin-left: 38px;
+}
+
+/* bmi calculator end */
+
+/* trainers start */
+
+.trainers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    padding: 40px;
+    background-color: azure;
+}
+
+.trainer-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px;
+}
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    position: absolute;
+    top: 220px;
+    left: 57px;
+    width: 200px;
+    height: 120px;
+    background-color: var(--title-color);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.overlay h3 {
+    color: white;
+}
+
+.trainer-image {
+    position: relative;
+}
+
+.trainer-image img {
+    position: relative;
+    z-index: 1;
+}
+
+.trainer-image:hover .overlay {
+    z-index: 2;
+    opacity: 1;
+}
+
+.horizontal-bar {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 105%;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    background-color: var(--title-color);
+    transition: 0.5s all linear;
+}
+
+.trainer-image:hover .horizontal-bar {
+    height: 180px;
+}
+
+.vertical-bar {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 105%;
+    transform: translate(-50%, -50%);
+    background-color: var(--title-color);
+    transition: 0.5s all linear;
+}
+
+.trainer-image:hover .vertical-bar {
+    width: 180px;
+}
+
+/* trainers end */
+
+/* purchase start */
+
+.purchase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    padding: 50px;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.product-cards img {
+    width: 300px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border: 1px solid white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.crossed-out-price {
+    text-decoration: line-through;
+}
+
+.shopping-cart {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+.shopping-cart img {
+    position: absolute;
+    right: 150px;
+
+    height: 15px;
+    width: 15px;
+}
+
+/* purchase end */
+
+/* review start */
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    padding: 50px;
+    background-color: azure;
+}
+
+.review-text {
+    color: white;
+    background-color: var(--title-color);
+    padding: 20px;
+}
+
+.review-card::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    background-color: var(--title-color);
+    clip-path: polygon(100% 0, 0 0, 100% 80%);
+
+}
+
+.client-reviews {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 75px;
+    padding-top: 30px;
+}
+
+.client {
+    display: flex;
+    gap: 20px;
+}
+
+.client img {
+    width: 40px;
+    border-radius: 20px;
+}
+
+.client-title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.review-text p {
+    width: 500px
+}
+
+/* review end */
+
+/* contact start */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    padding: 50px;
+}
+
+.appointment-and-map-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+
+    margin-top: 20px;
+}
+
+.appointment {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mobile-and-email {
+    display: flex;
+    gap: 20px;
+}
+
+.appointment-mobile-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.appointment-email-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.appointment-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.appointment-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.appointment-form input {
+    background-color: azure;
+    padding: 5px;
+}
+
+/* contact end */
+
+/* footer start */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--title-color);
+    color: white;
+}
+
+.footer h2 {
+    color: white;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.img-container {
+    width: 71%;
+}
+
+.information-and-helpful-links {
+    display: flex;
+    justify-content: space-around;
+
+    color: white;
+}
+
+.information-and-helpful-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.information,
+.helpful-links {
+    display: block;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* footer end */
