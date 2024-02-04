@@ -1,11 +1,17 @@
 @media only screen and (max-width: 576px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .hamburger-icon {
         display: block;
         height: 120px;
     }
     
     .menu-button:checked~.navbar-right {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(53, 84, 148);
         top: 100%;
         left: 0;
         width: 100%;
@@ -36,7 +42,7 @@
     }
 
     .image-div img {
-        width: 700px;
+        width: 70%;
     }
 
     .class-description {
