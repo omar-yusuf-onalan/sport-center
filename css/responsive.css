@@ -1,8 +1,9 @@
 @media only screen and (max-width: 576px) {
-    .menu-button {
+    .hamburger-icon {
         display: block;
+        height: 120px;
     }
-
+    
     .menu-button:checked~.navbar-right {
         display: block;
         top: 100%;
@@ -51,6 +52,10 @@
         width: 200px;
     }
 
+
+    .client-reviews {
+        gap: 150px;
+    }
     .footer {
         padding-left: 30px;
         padding-right: 30px;

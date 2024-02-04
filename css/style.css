@@ -44,6 +44,10 @@ h2 {
     display: none;
 }
 
+.hamburger-icon {
+    display: none;
+}
+
 .navbar-right {
     display: flex;
     justify-content: space-evenly;
